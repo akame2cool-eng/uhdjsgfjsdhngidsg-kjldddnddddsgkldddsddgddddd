@@ -67,7 +67,7 @@ def can_use_command(user_id: int, command: str) -> tuple:
         return True, ""
     
     # Check if it's a card check command
-    card_commands = ['chk', 'st5', 'sh', 'au', 'pp', 'caliper']
+    card_commands = ['chk', 'st5', 'sh', 'au', 'pp', 'caliper', 's1']  # AGGIUNTO 's1'
     if command in card_commands:
         current_time = time.time()
         last_used = user_cooldowns.get(user_id)
