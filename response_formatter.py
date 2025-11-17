@@ -68,7 +68,7 @@ Time: {get_elapsed_time()}"""
         gateway_display = "STRIPE $5"
     elif gateway_display == 'SHOPIFY':
         gateway_display = "SHOPIFY $1"
-    elif gateway_display == 'AUTHNET':
+    elif gateway_display == 'AUTHNET $32':
         gateway_display = "AUTHNET $1"
     
     response = f"""{title} {status_emoji}
@@ -176,4 +176,5 @@ Format: email:password
 Example: /crunchy user@example.com:password123"""
     }
     
+
     return error_templates.get(error_type, f"Error: {details}")
